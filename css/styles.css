@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(179, 244, 155);
+    text-align: right;
+}
+.navbar img
+{
+    float: left;
+}
+
+.navbar .links a:hover{
+    background-color: rgb(152, 205, 132);
+}
+
+.navbar h1
+{
+    float: left;
+    size: 36px;
+    margin: 15px;
+}
+
+.navbar .links
+{
+    float: right;
+}
+.navbar .links a{
+    display: inline;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(31, 150, 255);
+    float: right;
+    text-decoration: none;
+    margin-right: 60px;
+    margin: 25px 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+.uno{
+    width: 500px;
+    float: right;
+}
+.dos{
+    margin-top: 200px;
+    float: left;
+    margin-right: 20px;
+}
