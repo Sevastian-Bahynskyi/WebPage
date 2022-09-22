@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
     margin: 15;
+=======
+    margin: 16;
+>>>>>>> 73498fb9f44077cf91390cd11c7bf3873b9f2311
 }
 .navbar{
     position: fixed;
