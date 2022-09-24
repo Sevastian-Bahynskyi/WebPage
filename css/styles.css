@@ -9,6 +9,7 @@ body{
     height: 70px;
     background-color: rgb(179, 244, 155);
     text-align: right;
+    z-index: 1;
 }
 .navbar img
 {
@@ -40,30 +41,44 @@ li a{
     float: left;
     text-align: center;
     text-decoration: none;
-    padding: 21.5px 50px;
+    padding: 21.5px 30px;
 
 }
 li a:hover{
     background-color: rgb(152, 205, 132);
 }
-
-.mainpicture
-{
+.mainblock{
+    position: relative;
+    top: 70px;
     height: auto;
+}
+.mainblock .mainpicture
+{
+    /* height: auto; */
     width: 70%;
     position: relative;
     z-index: -1;
     float: left;
 }
-.mainpicture img{
+.mainblock .mainpicture img{
     height: 100%;
     width: 100%;
 }
-.maintext p, .maintext h1{
+.maintext{
+    width: 25%;
+    float: left;
+    margin: 15px 15px;
+    text-align:"justify";
+    text-justify: "inter-word";
+}
+.mainblock .maintext h1{
+    margin: 0;
+}
+.mainblock .maintext p{
     padding: auto;
     font-size: large;
     font-weight: bolder;
-    margin-left: 15px;
+    margin-bottom: 100px;
 }
 #catalogueButton{
     position: absolute;
@@ -72,7 +87,7 @@ li a:hover{
     width: 200px;
     height: 50px;
     border-width: 0px;
-    box-shadow: 0px 0px 7px #0000005b;
+    box-shadow: 0px 0px 6px #0000005b;
     border-radius: 50px;
     font-size: 21px;
     background-color: rgb(15, 252, 141);
@@ -81,6 +96,87 @@ li a:hover{
     transition: 0.15s;
 }
 #catalogueButton:hover{
-    background-color: rgb(15, 223, 126);
-    transform: scale(115%);
+    background-color: rgb(42, 223, 136);
+    box-shadow: 0px 0px 8px #0000005b;
+    transform: scale(105%);
 }
+
+ .footer{
+    margin: 0;
+    margin-top: 20px;
+    background-color: #2cdaf9;
+    width: 100%;
+    position: relative;
+    bottom: 0%;
+    float: left;
+
+}
+.workHours{
+    right: 0px;
+    float: right;
+}
+.footer p, .footer h2{
+    margin: 0;
+    padding: 15px;
+    font-weight: bold;
+}
+.footer h2{
+    padding-bottom: 0;
+}
+.fa-facebook{
+    float: left;
+    background: #3B5998;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    width: 20px;
+    border-radius: 5px;
+    margin: 70px;
+    text-decoration: none;
+    scale: 400%;
+}
+.fa-instagram{
+    float: left;
+    background: #3B5998;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    width: 20px;
+    border-radius: 5px;
+    margin: 70px;
+    text-decoration: none;
+    scale: 400%;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.fa{
+    transition: 0.3s;
+}
+.fa-facebook a::before{
+    opacity: 1;
+}
+.fa-facebook a::after{
+    opacity: 0.7;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* EVENTS */
+
+
+
+
+
+/* EVENTS END */
+
+/* CONTACT */
+
+
+
+/* CONTACT END */
