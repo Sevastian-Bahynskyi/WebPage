@@ -11,6 +11,8 @@ body{
 .navbar img
 {
     float: left;
+    width: 70px;
+    height: 70px;
 }
 
 .navbar .links a:hover{
@@ -27,25 +29,33 @@ body{
 .navbar .links
 {
     float: right;
+    margin-right: 50px;
 }
 .navbar .links a{
-    display: inline;
     font-weight: bold;
     font-size: x-large;
     color: rgb(31, 150, 255);
     float: right;
     text-decoration: none;
-    margin-right: 60px;
-    margin: 25px 15px;
+    margin: 23px 15px;
     vertical-align: middle;
     text-align: center;
 }
-.uno{
-    width: 500px;
-    float: right;
+.mainpicture
+{
+    height: 70%;
+    width: 70% ;
 }
-.dos{
-    margin-top: 200px;
+.mainpicture img{
+    height: 100%;
+    width: 100% ;
     float: left;
     margin-right: 20px;
+    z-index: 0;
+}
+.mainpicture input{
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    z-index: 1;
 }
