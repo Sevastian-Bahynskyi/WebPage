@@ -1,7 +1,9 @@
 body{
     margin: 0;
+    /* font-family: ; */
 }
 .navbar{
+    display: inline;
     position: fixed;
     width: 100%;
     height: 70px;
@@ -14,48 +16,56 @@ body{
     width: 70px;
     height: 70px;
 }
-
-.navbar .links a:hover{
-    background-color: rgb(152, 205, 132);
-}
-
 .navbar h1
 {
     float: left;
     size: 36px;
     margin: 15px;
+    margin-right: 400px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+li{
+    display: inline;
+    background-color: aquamarine;
+}
+li a{
+    display: block;
+    color: rgb(47, 103, 255);
+    font-weight: bolder;
+    font-size: x-large;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding: 21.5px 50px;
+
+}
+li a:hover{
+    background-color: rgb(152, 205, 132);
 }
 
-.navbar .links
-{
-    float: right;
-    margin-right: 50px;
-}
-.navbar .links a{
-    font-weight: bold;
-    font-size: x-large;
-    color: rgb(31, 150, 255);
-    float: right;
-    text-decoration: none;
-    margin: 23px 15px;
-    vertical-align: middle;
-    text-align: center;
-}
 .mainpicture
 {
-    height: 70%;
+    height: auto;
     width: 70% ;
+    position: relative;
+    z-index: -1;
+    float: left;
 }
 .mainpicture img{
     height: 100%;
-    width: 100% ;
-    float: left;
-    margin-right: 20px;
-    z-index: 0;
+    width: 100%;
 }
 .mainpicture input{
     position: absolute;
-    top: 55%;
-    left: 30%;
-    z-index: 1;
+    top: 50%;
+    left: 38%;
+    width: 200px;
+    height: 50px;
+    border-width: 0px;
+    box-shadow: 0px 0px 7px #0000005b;
+    border-radius: 50px;
 }
