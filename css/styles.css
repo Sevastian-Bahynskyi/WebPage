@@ -50,7 +50,7 @@ li a:hover{
 .mainpicture
 {
     height: auto;
-    width: 70% ;
+    width: 70%;
     position: relative;
     z-index: -1;
     float: left;
@@ -58,6 +58,12 @@ li a:hover{
 .mainpicture img{
     height: 100%;
     width: 100%;
+}
+.maintext p, .maintext h1{
+    padding: auto;
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 15px;
 }
 #catalogueButton{
     position: absolute;
