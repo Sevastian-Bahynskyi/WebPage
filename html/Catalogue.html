@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CATALOGUE | VIA Board Games</title>
+    <link href="../css/styles.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <a href="../html/index.html"> <img src="../img/Logo.png" alt="LogoLink"/>
+        <h1>VIA Board Games</h1> </a>
+        <li id="links">
+            <ul><a href="../html/About_Games.html" id="last_link">About games</a></ul>
+            <ul><a href="../html/Contact.html">Contact</a></ul>
+            <ul><a href="../html/Events.html">Events</a></ul>
+            <ul><a href="../html/Catalogue.html">Catalogue</a></ul>
+        </li>
+    </div>
+
+    <div class="catalogue-block">
+        <div class="filters">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <input type="button" value="FIND">
+            </div>
+            <select aria-placeholder="Game genre">
+
+                <option value="" disabled selected>Game genre:</option>
+                <option value="0">Children games</option>
+                <option value="1">Party games</option>
+                <option value="2">Deduction games</option>
+                <option value="3">Family game</option>
+                <option value="4">Others...</option>
+            </select>
+            <div class="number-of-players">
+                <p>Number of players</p>
+                <input placeholder="min" type="number" min="2" max="98">
+                <input placeholder="max" type="number" min="2" max="99">
+            </div>
+            <div class="available">
+                <p>Available at the moment</p>
+                <input type="checkbox" value="Available at the moment">
+            </div>
+        </div>
+
+
+        <div class="land-game">
+            <img src="/img/bring_game_img.jpg">
+            <p>Land your own games!</p>
+            <input type="button" value="Add">
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.facebook.com/viauniversitycollege/events" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/viauniversitycollege/" class="fa fa-instagram"></a>
+        <div class="workHours">
+            <h2>Work hours</h2>
+            <p id="workingHours">
+                Monday: 15:00 - 19:00<br>
+                Tuesday: 15:00 - 19:00<br>
+                Wednesday: -----------<br>
+                Thursday: 15:00 - 19:00<br>
+                Friday: 15:00 - 19:00<br>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

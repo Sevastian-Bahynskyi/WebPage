@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    /* font-family: ; */
 }
 .navbar{
     display: inline;
@@ -34,7 +33,7 @@ li{
     background-color: aquamarine;
 }
 li a{
-    display: block;
+    /* display: block; */
     color: rgb(47, 103, 255);
     font-weight: bolder;
     font-size: x-large;
@@ -83,7 +82,7 @@ li a:hover{
 #catalogueButton{
     position: absolute;
     top: 75%;
-    left: 38%;
+    left: calc(50% - 94px);
     width: 200px;
     height: 50px;
     border-width: 0px;
@@ -101,7 +100,7 @@ li a:hover{
     transform: scale(105%);
 }
 
- .footer{
+.footer{
     margin: 0;
     margin-top: 70px;
     background-color: #2cdaf9;
@@ -161,7 +160,51 @@ p{
 /* EVENTS */
 
 
-
+.events_box{
+    position: relative;
+    top: 70px;
+    background-color: #d9aafd;
+}
+.event1, .event2, .event3{
+    background-color:white ;
+    position: relative;
+    overflow: hidden;
+    margin: 0 30px;
+    border: 1px solid black;
+}
+.event2, .event3{
+    margin-top: 30px;
+}
+.event1 h1, .event2 h1, .event3 h1{
+    position: absolute;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #8b00ff;
+    font-size: xx-large;
+    top: calc(50% - 37.6px);
+}
+.event1 img{
+    position: relative;
+    margin-top: 30px;
+    
+}
+.event1 img, .event2 img, .event3 img{
+    position: relative;
+    float: left;
+    left: 34%;
+}
+.event1 p, .event2 p,.event3 p{
+    width: 500px;
+    position: absolute;
+    top: calc(50%-144.8px);
+    right: 5%;
+    float:left;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #8b00ff;
+    font-size: xx-large;
+    font-weight: bold;
+}
 
 
 /* EVENTS END */
@@ -170,7 +213,116 @@ p{
 
 /* CONTACT */
 
+.contact-block{
+    position: relative;
+    top: 70px;
+    height: 100%;
+    width: 100%;
+    float: left;
+}
 
+#form{
+    float: left;
+    position: relative;
+}
+
+#right{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+#content{
+    position: relative;
+    border:rgb(0, 0, 0) 3px solid;
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    margin: 25px 20px;
+}
+
+#Fname{
+    margin: 8px;
+    float: left;
+
+}
+
+
+#Sname{
+    margin: 8px;
+    clear: left;
+}
+
+#email{
+    margin: 8px;
+}
+.map{
+    position: fixed;
+    right: 0;
+    width: 35%;
+    height: 60%;
+}
+
+.map iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#ourInfo
+{
+    position: relative;
+    margin-left: 20px;
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+#Michael, #Sevastian, #Kateryna, #Hugo{
+    position: relative;
+    width: fit-content;
+    height: 200px;
+    float: left;
+}
+
+#Sevastian, #Kateryna{
+    margin-left: 10%;
+}
+
+#Hugo, #Kateryna{
+    margin-top: 6%;
+}
+
+#Michael img, #Sevastian img, #Kateryna img, #Hugo img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    float: left;
+}
+
+#Michael p, #Sevastian p, #Hugo p, #Kateryna p{
+    position: relative;
+    width: 147.750px;
+    float: left;
+    margin-left: 15px;
+    top: calc(50% - 68.8px + 19.2px);
+    font-size: larger;
+    font-weight: bold;
+}
+
+#text textarea{
+    position: absolute;
+    margin: 1px;
+    width: 48.8%;
+    height: 60%;
+    float: left;
+}
+.pizza{
+    position: relative;
+    clear: both;
+    top: 75px;
+}
 
 /* CONTACT END */
 
@@ -257,3 +409,135 @@ p{
     background-color: #3B5998;
 }
 /* ABOUT GAMES END*/
+
+/* CATALOGUE */
+.catalogue-block{
+    position: relative;
+    top: 70px;
+}
+.filters{
+    position: relative;
+    margin: 0 15px;
+    /* margin-top: 0px; */
+}
+.search-bar{
+    width: fit-content;
+    display: block;
+    float: left;
+    margin-bottom: 15px;
+}
+.filters .search-bar input[type="text"]{
+    height: 25px;
+    position: relative;
+    float: left;
+    color: #6700bc;
+    font-weight: bold;
+    background-color: #e2bdff;
+    font-size: x-large;    
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.filters .search-bar input[type="button"]{
+    height: 27px;
+    background-color: #8c00ff;
+    color: whitesmoke;
+    font-weight: bold;
+    border: 2px solid #6300b3;
+    margin-top: 15px;
+    margin-left: 2px;
+}
+.filters .search-bar input[type="button"]:hover{
+    background-color: #6700bc;
+}
+
+.filters select{
+    position: absolute;
+    margin-top: 15px;
+    height: 27px;
+    right: 55%;
+    background-color: #e2bdff;
+    font-weight: 600;
+    float: left;
+    font-size: larger;
+}
+.filters select option{
+    font-weight: 600;
+}
+.filters select:hover{
+    background-color: #d094ff;
+}
+
+.filters .number-of-players{
+    position: absolute;
+    right: 25%;
+    margin: 15px;
+}
+
+.filters .number-of-players p{
+    font-size: x-large;
+    float: left;
+    margin: 0 15px;
+    color: #6700bc;
+    font-weight: 900;
+}
+.filters .number-of-players input{
+    /* height: 20px; */
+    background-color: #d094ff;
+    border-radius: 5px;
+    font-weight: 800;
+    color: #2c0051;
+}
+.filters .available{
+    position: absolute;
+    margin: 15px 0;
+    right: 2%;
+}
+.filters .available p{
+    color: #6700bc;
+    font-weight: 900;
+    float: left;
+    font-size: x-large;
+    margin: 0 15px;
+}
+.filters .available input{
+    width: 25px;
+    height: 25px;
+}
+
+.land-game{
+    position: relative;
+    z-index: -1;
+    width: 25%;
+}
+
+.land-game img{
+    width: 100%;
+}
+
+.land-game p{
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: x-large;
+    background-color: #2c0051;
+    opacity: 0.9;
+}
+
+.land-game input{
+    width: 25%;
+    position: absolute;
+    top: 80%;
+    left: 37%;
+    background-color: greenyellow;
+    font-weight: bold;
+    font-size: x-large;
+    border-radius: 50px;
+}
+
+.land-game input:hover{
+    background-color: rgb(139, 204, 40);
+}
+/* CATALOGUE */
