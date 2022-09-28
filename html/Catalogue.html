@@ -3,54 +3,160 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CATALOGUE | VIA Board Games</title>
+    <title>Catalogue | VIA Board Games</title>
     <link href="../css/styles.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="navbar" id="navbar">
-        <a href="../html/index.html"> <img src="../img/Logo.png" alt="LogoLink"/>
-        <h1>VIA Board Games</h1> </a>
-        <li id="links">
-            <ul><a href="../html/About_Games.html" id="last_link">About games</a></ul>
-            <ul><a href="../html/Contact.html">Contact</a></ul>
-            <ul><a href="../html/Events.html">Events</a></ul>
-            <ul><a href="../html/Catalogue.html">Catalogue</a></ul>
-        </li>
+    <div class="navbar">
+        <a id="homepageLink" href="../html/index.html"> <img src="../img/Images-for-Main_page/Logo.png" alt="LogoLink" />
+            <h1>VIA Board Games</h1>
+        </a>
+        <a href="../html/About_Games.html">About games</a></ul>
+        <a href="../html/Contact.html">Contact</a>
+        <a href="../html/Events.html">Events</a>
+        <a href="../html/Catalogue.html">Catalogue</a>
     </div>
 
-    <div class="catalogue-block">
-        <div class="filters">
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <input type="button" value="FIND">
-            </div>
-            <select aria-placeholder="Game genre">
-
-                <option value="" disabled selected>Game genre:</option>
-                <option value="0">Children games</option>
-                <option value="1">Party games</option>
-                <option value="2">Deduction games</option>
-                <option value="3">Family game</option>
-                <option value="4">Others...</option>
-            </select>
-            <div class="number-of-players">
-                <p>Number of players</p>
-                <input placeholder="min" type="number" min="2" max="98">
-                <input placeholder="max" type="number" min="2" max="99">
-            </div>
-            <div class="available">
-                <p>Available at the moment</p>
-                <input type="checkbox" value="Available at the moment">
+    <div id="CATALOGUE_search-options-bar">
+        <input id="Search" type="search" placeholder="Search..">
+        <div class="dropdown">
+            <button class="dropdown-button">Game type</button>
+            <div class="dropdown-content">
+                <a href="#"><input type="checkbox">Link 1</a>
+                <a href="#"><input type="checkbox">Link 2</a>
+                <a href="#"><input type="checkbox">Link 3</a>
             </div>
         </div>
+        <div>Number of players</div>
 
+        <div>
+            <input class="textFieldMINMAX" type="text" placeholder="min">
+            <input class="textFieldMINMAX" type="text" placeholder="max">
+        </div>
+        <div>
+            <input type="checkbox">
+            <div>Is available now</div>
+        </div>
+    </div>
 
-        <div class="land-game">
-            <img src="/img/bring_game_img.jpg">
-            <p>Land your own games!</p>
-            <input type="button" value="Add">
+    <div id="CATALOGUE_lend-games-block">
+        <div id="CATALOGUE_lend-games-block-masking-box"><img src="../img/Images-for-Catalog-and-Event/waterfall.jpg" alt="lend-your-games"></div>
+        <div id="CATALOGUE_lend-games-block-text">Lend your own games!</div>
+        <input type="button" class="catalogueButton" value="lend-your-games" title="lend-your-games">
+    </div>
+
+    <div class="CATALOGUE_rent-games-block">
+        <div class="masking-box"><img src="../img/Images-for-Catalog-and-Event/ttr-germany.jpg" alt="tickettoride"></div>
+        <div class="CATALOGUE_rent-games-block-text">Ticket to ride</div>
+        <div class="button-container">
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-one">
+            <label class="CATALOGUE_game-block-button" for="read-more-checkbox-one">Read more</label>
+            <input type="button" class="CATALOGUE_game-block-button" value="Rent" title="rent" id="rent-button">
+            <div>
+                <p>Ticket to Ride is a cross-country train
+                    adventure in which players collect and play
+                    matching train cards to claim railway routes
+                    connecting cities throughout North America.
+                    <br> 
+                    <br>
+                    The longer the routes, the more points they earn.
+                    <br> 
+                    <br> 
+                    Additional points come to those who can fulfill their
+                    Destination Tickets by connecting two distant cities,
+                    and to the player who builds the longest continuous railway.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="CATALOGUE_rent-games-block">
+        <div class="masking-box"><img src="../img/Images-for-Catalog-and-Event/sherlockCatalog.jpg" alt="sherlockCatalog"></div>
+        <div class="CATALOGUE_rent-games-block-text">The Sherlock files</div>
+        <div class="button-container">
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-two">
+            <label class="CATALOGUE_game-block-button" for="read-more-checkbox-two">Read more</label>
+            <input type="button" class="CATALOGUE_game-block-button" value="Rent" title="rent" id="rent-button">
+            <div>
+                <p>A deck-based, cooperative mystery game that reminds me of
+                    Chronicles of Crime in a smaller package, The Sherlock Files
+                    come with three cases per set, and ask players to work
+                    together by playing clue cards—but also award you points
+                    at the end of the case for what you got right and for
+                    discarding cards that turned out to be irrelevant.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="CATALOGUE_rent-games-block">
+        <div class="masking-box"><img src="../img/Images-for-Catalog-and-Event/GuessWhoCatalog.jpg" alt="GuessWhoCatalog"></div>
+        <div class="CATALOGUE_rent-games-block-text">Guess Who</div>
+        <div class="button-container">
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-three">
+            <label class="CATALOGUE_game-block-button" for="read-more-checkbox-three">Read more</label>
+            <input type="button" class="CATALOGUE_game-block-button" value="Rent" title="rent" id="rent-button">
+            <div>
+                <p>Guess Who is a two player game where players use differential yes or no questions
+                    to isolate a hidden character. The first player to guess
+                    the other players hidden character wins.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="CATALOGUE_rent-games-block">
+        <div class="masking-box"><img src="../img/Images-for-Catalog-and-Event/CodeNamesCatalog.jpg" alt="CodeNamesCatalog"></div>
+        <div class="CATALOGUE_rent-games-block-text">Code Names</div>
+        <div class="button-container">
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-four">
+            <label class="CATALOGUE_game-block-button" for="read-more-checkbox-four">Read more</label>
+            <input type="button" class="CATALOGUE_game-block-button" value="Rent" title="rent" id="rent-button">
+            <div>
+                <p>Codenames is a game of guessing which codenames
+                    (i.e., words) in a set are related to a hint-word given by another player. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="CATALOGUE_rent-games-block">
+        <div class="masking-box"><img src="../img/Images-for-Catalog-and-Event/UnoCatalog.jpg" alt="UnoCatalog"></div>
+        <div class="CATALOGUE_rent-games-block-text">Uno</div>
+        <div class="button-container">
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-five">
+            <label class="CATALOGUE_game-block-button" for="read-more-checkbox-five">Read more</label>
+            <input type="button" class="CATALOGUE_game-block-button" value="Rent" title="rent" id="rent-button">
+            <div>
+                <p>Each player draws a card. Player with the highest point value is the dealer.
+                    Shuffle the deck. Each player is dealt 7 cards.
+                    <br><br>Place the remaining cards facedown to form a draw pile.
+                    Turn over the top card of the draw pile to begin a discard pile.
+                    If the top card is a Wild or Wild Draw 4, return it to the deck and pick another card.
+                    For all other cards, see directions that follow.                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="CATALOGUE_rent-games-block">
+        <div class="masking-box"><img src="../img/Images-for-Catalog-and-Event/PictionaryCatalog.jpg" alt="PictionaryCatalog"></div>
+        <div class="CATALOGUE_rent-games-block-text">Pictionary</div>
+        <div class="button-container">
+            <input type="checkbox" class="read-more-checkbox" id="read-more-checkbox-six">
+            <label class="CATALOGUE_game-block-button" for="read-more-checkbox-six">Read more</label>
+            <input type="button" class="CATALOGUE_game-block-button" value="Rent" title="rent" id="rent-button">
+            <div>
+                <p>One player on a team picks a card and looks
+                    at the word matching the color of the space
+                    their pawn is on. The player has to sketch the prompt.
+                    The person sketching has 1 minute to draw the word without
+                    using letters or symbols. If their team guesses the word,
+                    they roll a die and move around the board.
+                </p>
+            </div>
         </div>
     </div>
 
