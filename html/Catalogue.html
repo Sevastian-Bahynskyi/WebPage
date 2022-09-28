@@ -24,20 +24,20 @@
         <div class="dropdown">
             <button class="dropdown-button">Game type</button>
             <div class="dropdown-content">
-                <a href="#"><input type="checkbox">Link 1</a>
-                <a href="#"><input type="checkbox">Link 2</a>
-                <a href="#"><input type="checkbox">Link 3</a>
+                <input type="checkbox" id="checkbox1"><label for="checkbox1">Link 1</label>
+                <input type="checkbox" id="checkbox2"><label for="checkbox2">Link 2</label>
+                <input type="checkbox" id="checkbox3"><label for="checkbox3">Link 3</label>
             </div>
         </div>
-        <div>Number of players</div>
 
+        <p>Number of players</p>
         <div>
-            <input class="textFieldMINMAX" type="text" placeholder="min">
-            <input class="textFieldMINMAX" type="text" placeholder="max">
+            <input class="textFieldMINMAX" type="number" placeholder="min" min="0" max="98">
+            <input class="textFieldMINMAX" type="number" placeholder="max" min="2" max="99">
         </div>
         <div>
             <input type="checkbox">
-            <div>Is available now</div>
+            <label>Is available now</label  >
         </div>
     </div>
 
