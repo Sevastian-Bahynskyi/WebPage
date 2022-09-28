@@ -91,7 +91,7 @@ li a:hover{
     border-radius: 50px;
     font-size: 21px;
     background-color: rgb(15, 252, 141);
-    color: rgb(0, 0, 0);
+    color: #FE0F5F;
     font-weight: bolder;
     transition: 0.15s;
 }
@@ -223,11 +223,11 @@ p{
 }
 
 .game-information{
-    width: 200px;
+    width: 250px;
     height: fit-content;
     position: absolute;
     top: -10px;
-    right: 12%;
+    right: 8%;
     margin-bottom: 0;
 }
 
@@ -245,7 +245,7 @@ p{
     color: white;
     font-weight: bolder;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    bottom: -280px;
+    bottom: -10px;
 }
 
 .about-games input:hover{
@@ -256,5 +256,4 @@ p{
 .about-games input:active{
     background-color: #3B5998;
 }
-
 /* ABOUT GAMES END*/
