@@ -6,58 +6,98 @@
     <title>Events | VIA Board Games</title>
     <link href="../css/styles.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <a id="homepageLink" href="../html/index.html"> <img src="../img/Images-for-Main_page/Logo.png" alt="LogoLink" />
-            <h1>VIA Board Games</h1>
-        </a>
-        <a href="../html/About_Games.html">About games</a></ul>
-        <a href="../html/Contact.html">Contact</a>
-        <a href="../html/Events.html">Events</a>
-        <a href="../html/Catalogue.html">Catalogue</a>
-    </div>
-
-    <div class="events_box">
-        <div class="event1"><h1>The 1st Saturday of the month </h1>
-            <p>Best offers free birthday parties and can be tailored to whatever type of your child likes.</p>
-            <img src="../img/Images-for-Events/event1.jpg" alt="Event1" title="Event1">
-            
-            
-
+    <nav class="navbar navbar-expand-md navbar-light fs-5 p-0">
+        <div class="p-0 container-fluid">
+            <!-- Links -->
+            <a class="align-middle m-0 p-2 navbar-brand fw-bold" href="/html/index.html">
+                <img id="Logo" src="/img/Images-for-Main_page/Logo.png">
+                <p class="m-0">VIA Board Games</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/Catalogue.html">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/About_Games.html">About Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-       
-        <div class="event2"> <h1>The 2nd Saturday of the month</h1>
-            <p>Refer a friend to Via Board Games and earn up to 50 DKK off your purchase.</p>
-            <img src="../img/Images-for-Events/event2.jpg" alt="Event2" title="Event2">
-            
-
+    </nav>
+    </div>
+    <div class="container-fluid about-games-block p-5 justify-content-center">
+        <div class="row border-bottom-0">
+            <div class="col-md align-self-center fw-bold">
+                <p>The 1st Saturday of the month</p>
+            </div>
+            <div class="col-md">
+                <img src="/img/Images-for-Events/event1.jpg" class="img-fluid" alt=" A large web">
+            </div>
+            <div class="col-md align-self-center fs-4">
+                <p>Best offers free birthday parties and can be tailored to
+                    whatever type of your child likes.</p>
+            </div>
         </div>
-    
-    <div class="event3">
-        <h1>The 3rd Saturday of the month </h1>
-        <p>Bring in your old games and come home with something new.</p>
-        <img src="../img/Images-for-Events/event3.jpeg" alt="Event3" title="Event3">
-        
-        
-    </div>
 
-    </div>
-    <div class="footer">
-        <a href="https://www.facebook.com/viauniversitycollege/events" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/viauniversitycollege/" class="fa fa-instagram"></a>
-        <div class="workHours">
-            <h2>Work hours</h2>
-            <p id="workingHours">
-                Monday: 15:00 - 19:00<br>
-                Tuesday: 15:00 - 19:00<br>
-                Wednesday: -----------<br>
-                Thursday: 15:00 - 19:00<br>
-                Friday: 15:00 - 19:00<br>
-            </p>
+        <div class="row border-bottom-0">
+            <div class="col-md align-self-center fw-bold">
+                <p>The 2nd Saturday of the month</p>
+            </div>
+            <div class="col-md">
+                <img src="/img/Images-for-Events/event2.jpg" class="img-fluid" alt=" A large web">
+            </div>
+            <div class="col-md align-self-center  fs-4">
+                <p>Refer a friend to Via Board Games and earn up to 50 DKK off
+                    your purchase.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md align-self-center fw-bold">
+                <p>The 3nd Saturday of the month</p>
+            </div>
+            <div class="col-md">
+                <img src="/img/Images-for-Events/event3.jpeg" class="img-fluid" alt=" A large web">
+            </div>
+            <div class="col-md align-self-center fs-4">
+                <p>Bring in your old games and come home with something new.</p>
+            </div>
         </div>
     </div>
+
+    <footer class="container-footer footer m-0">
+        <div class="row">
+            <div class="col d-flex align-items-center">
+                <a href="https://www.facebook.com/viauniversitycollege/events" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/viauniversitycollege/" class="fa fa-instagram"></a>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <pre>
+                Work hours
+                Monday: 15:00 - 19:00
+                Tuesday: 15:00 - 19:00
+                Wednesday: -----------
+                Thursday: 15:00 - 19:00
+                Friday: 15:00 - 19:00</pre>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

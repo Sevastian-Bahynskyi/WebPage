@@ -6,86 +6,93 @@
     <title>Contact | VIA Board Games</title>
     <link href="../css/styles.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link href="../css/styles.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" type="text/css"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <a id="homepageLink" href="../html/index.html"> <img src="../img/Images-for-Main_page/Logo.png" alt="LogoLink" />
-            <h1>VIA Board Games</h1>
-        </a>
-        <a href="../html/About_Games.html">About games</a></ul>
-        <a href="../html/Contact.html">Contact</a>
-        <a href="../html/Events.html">Events</a>
-        <a href="../html/Catalogue.html">Catalogue</a>
-    </div>
-
-    <div class="contact-block">
-        <div id="form">
-            <div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light fs-5 p-0">
+        <div class="p-0 container-fluid">
+            <!-- Links -->
+            <a class="align-middle m-0 p-2 navbar-brand fw-bold" href="/html/index.html">
+                <img id="Logo" src="/img/Images-for-Main_page/Logo.png">
+                <p class="m-0">VIA Board Games</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/Catalogue.html">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/About_Games.html">About Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contactBlock">
+        <div class="container">
+            <div class="form">
                 <form action="http://www.falseurl-notuseful.dk" method="post" name="contactForm">
-                    <div id="right">
-                    <div id="Fname">
-                        <label for="Fname">First name</label>
-                        <input type="text" name="Fname">
+                    <div class="row">
+                        <div id="right">
+                            <div class="col-md-4 offset-2">
+                                <div class="col-md-6">
+                                    <div id="Fname">
+                                        <label for="Fname">First name</label>
+                                        <input type="text" name="Fname">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div id="Sname">
-                        <label for="Sname">Second name(s)</label>
-                        <input type="text" name="Sname">
+                    <div class="row">
+                        <div id="right">
+                            <div class="col-md-4 offset-2">
+                                <div class="col-md-6">
+                                    <div id="Sname">
+                                        <label for="Sname">Second name(s)</label>
+                                        <input type="text" name="Sname">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="email">
-                        <label for="email">E-mail(s)</label>
-                        <input type="text" name="email">
-                    </div>
+                    <div class="row">
+                        <div id="right">
+                            <div class="col-md-4 offset-2">
+                                <div class="col-md-6">
+                                    <div id="email">
+                                        <label for="email">E-mail</label>
+                                        <input type="text" name="email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="text">
-                    <textarea placeholder="Ask us anything" name="textarea" id="textarea"></textarea>
+                        <textarea placeholder="Ask us anything" name="textarea" id="textarea"></textarea>
                     </div>
-                    <input class="pizza" type="submit" value="Send">
-                    <input class="pizza" type="reset" value="Erase all data">
+                    <input class="end" type="submit" value="Send">
+                    <input class="end" type="reset" value="Erase all data">
                 </form>
             </div>
-
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.9481100993576!2d9.835790251244907!3d55.863566690816135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c63be87e17d19%3A0xa65113d28ba174ba!2sVIA%20University%20Campus%20Horsens!5e0!3m2!1sen!2sdk!4v1664294780015!5m2!1sen!2sdk"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <div id="ourInfo">
-                <div id="Michael">
-                    <img src="../img/Images-for-Contact/michael.jpg" title="photo of Michael">
-                    <p>Michael Leo<br>Booking Manager<br><a href="mailto:332872@via.dk">Mail Michael🙃</a></p>
-                </div>
-
-                <div id="Sevastian">
-                    <img src="../img/Images-for-Contact/sevastian.jpg" title="photo of Sevastian">
-                    <p>Sevastian Bahynskiy<br>Booking Manager<br><a href="mailto:333425@via.dk">Mail Sevastian🙃</a></p>
-                </div>
-                <div id="Hugo">
-                    <img src="../img/Images-for-Contact/hugo.JPG" title="photo of hugo">
-                    <p>Hugo Madrid Peñarrubia<br>Booking Manager<br><a href="mailto:hmadrid12@via.dk">Mail Hugo🙃</a></p>
-                </div>
-                <div id="Kateryna">
-                    <img src="../img/Images-for-Contact/katerina.jpg" title="photo of Kateryna">
-                    <p>Kateryna Sokolova<br>Booking Manager<br><a href="mailto:333469@via.dk">Mail Kateryna🙃</a></p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <div class="footer">
-        <a href="https://www.facebook.com/viauniversitycollege/events" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/viauniversitycollege/" class="fa fa-instagram"></a>
-        <div class="workHours">
-            <h2>Work hours</h2>
-            <p id="workingHours">
-                Monday: 15:00 - 19:00<br>
-                Tuesday: 15:00 - 19:00<br>
-                Wednesday: -----------<br>
-                Thursday: 15:00 - 19:00<br>
-                Friday: 15:00 - 19:00<br>
-            </p>
         </div>
     </div>
 </body>
+
 </html>
