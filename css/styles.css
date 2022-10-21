@@ -1,3 +1,4 @@
+/* MAIN PAGE Sevastian Bahynskyi*/ 
 body{
     /* display: flex; */
     flex-direction: column;
@@ -59,7 +60,7 @@ nav .container-fluid a{
     border: none;
     border-radius: 100px;
     padding: 0.2rem 1rem;
-    transition: 2s;
+    transition: 0.7s;
 }
 
 .main-block a[role="button"]:hover{
@@ -143,24 +144,129 @@ nav .container-fluid a{
     width: 20%;
     height: 20%;
 }
+/* MAIN PAGE */
 
 
 /* EVENT */
-.about-games-block{
+.events-block{
     background-color: #57B6B4;
     padding: 0;
 }
 
 
-.about-games-block .row{
+.events-block .row{
     border: 5px solid white;
     background-color: #60CCAF;
 
 
 }
 
-.about-games-block p{
+.events-block p{
     margin: 5px;
+}
+/* EVENT */
+
+
+
+
+/* ABOUT GAMES Sevastian Bahynskyi*/
+.about-games-block .row .col-md{
+    border: 5px solid #324B50;
+    position: relative;
+}
+
+.about-games-block .row{
+    margin: 0 !important;
+}
+
+.about-games-block .row .row{
+    border-top: 0px;
+}
+
+.about-games-block h1{
+    text-align: center;
+}
+
+.about-games-block p{
+    margin-left: 1rem;
+}
+
+.about-games-block .col-md{
+    padding: 0 !important;
+}
+
+.about-games-block img{
+    object-fit: contain;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.about-games-block input[value*="Open in"]{
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    border: none;
+    border-radius: 100px;
+    padding: 0.2rem 1rem;
+    background: linear-gradient(45deg, #8c00ff, #8c00ff, #d151fb, #45cef1);
+    background-size: 300% 300%;
+    transition: 1.2s ease;
+    background-position: 0 0;
+    
 }
 
 
+.about-games-block input[value*="Open in"]:hover{
+    transform: scale(1.07);
+    color: #fff;
+    background-position: 100% 0;
+    transition: 1.2s ease;
+}
+/* ABOUT GAMES */
+
+
+
+/* CATALOGUE */
+.filter-bar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-bar .dropdown-button{
+    display: none;
+}
+
+.filter-bar label{
+    user-select: none;
+}
+
+.filter-bar ul{
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+}
+
+.filter-bar label[for="Game_Type"]{
+    background-color: #84DF9D;
+    border-radius: 50px;
+    padding: 0.2rem 1rem;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+}
+
+.filter-bar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.filter-bar .dropdown-button:checked~.dropdown-content{
+    display: block;
+}
+/* CATALOGUE */
